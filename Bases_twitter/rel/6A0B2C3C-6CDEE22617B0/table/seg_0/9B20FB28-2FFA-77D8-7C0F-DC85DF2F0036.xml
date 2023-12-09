@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B20FB28-2FFA-77D8-7C0F-DC85DF2F0036" name="TBL_NOTIFICACIONES">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:01:41 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_notificacion" id="A722362E-EDDA-DC6A-863A-318616B2B7EB">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:02:16 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_notificacion" id="7E79163F-2F18-39AC-50C9-757CC63B7C38">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:09:46 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E87FE7F6-D0F9-AF9E-1B33-0F764220FC33" referredColumn="2776FC33-2F51-6239-B61C-B3AEB185C935"/>
+</associations>
+</Column>
+<Column name="id_usuario" id="8E4FC6FF-BF36-4652-5A96-E15A7D1E0EF4">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:13:16 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF060A02-FCE3-7F40-4E71-D38DB699776B" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="id_usuario_procedente" id="D6A3B393-2CB5-2C7D-9161-05CC8D2AF2D7">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:14:13 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BDD0397-80CA-735F-AFDD-B2C3053236E7" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="fecha" id="8F4BFE47-849F-1ED2-55DA-34873CBE648B">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:02:42 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="enlace" id="33BD2A35-E889-A2EF-999F-DF79E8C83735">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:02:42 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1500</dataTypeSize>
+<ownDataTypeParameters>1500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A644DEF-B2E4-D4B2-97A5-B9B9DDEA8E89" name="TBL_NOTIFICACIONES_PK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:02:16 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A722362E-EDDA-DC6A-863A-318616B2B7EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DB0DA40-A134-5794-1E0F-BCB157D87664" name="TBL_NOT_TBL_T_NOT_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:09:46 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E79163F-2F18-39AC-50C9-757CC63B7C38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7EC62FD-0126-9C68-AD8E-564A752D4332" name="TBL_NOT_TBL_US_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:13:16 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E4FC6FF-BF36-4652-5A96-E15A7D1E0EF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D619BC1-004F-2C22-E23B-021907F50695" name="TBL_NOT_TBL_US_FKv2">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:14:13 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6A3B393-2CB5-2C7D-9161-05CC8D2AF2D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

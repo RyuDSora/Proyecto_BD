@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17C52292-9DA9-821C-5EC2-F8D283235243" name="TBL_SEGUIDORES_X_LISTAS">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:43:54 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_37</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="seg_x_list_id" id="60A84359-BEAE-C06C-350B-AC1818F62147">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:44:38 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_lista" id="FE22A863-407A-ED62-932A-17DB0FE7CC7D">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:45:17 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="433465D7-BC84-1D7D-6B51-64D1C89A14DC" referredColumn="E5B0CD6D-34E0-758C-E863-F0519AC5E70B"/>
+</associations>
+</Column>
+<Column name="seguidor" id="AEB35596-B488-CDEE-BF1E-45C80481265D">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:45:26 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3EA3396-A5BC-6569-D4EC-D72E028BDC48" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="fecha_seguir" id="8057B327-614D-1578-F776-1FEF7CE57FB6">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:44:54 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A254CBC-82DF-3781-3C84-CB62C895B858" name="TBL_SEGUIDORES_X_LISTAS_PK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:44:38 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60A84359-BEAE-C06C-350B-AC1818F62147"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87CE2FCF-5253-4D1B-017A-347D2148C6F6" name="TBL_SEGUI_X_LIST_TBL_LIST_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:45:17 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE22A863-407A-ED62-932A-17DB0FE7CC7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB6AB24B-8A0F-07AC-9BA3-559694AAF9FF" name="TBL_SEG_X_LIST_TBL_US_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:45:26 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEB35596-B488-CDEE-BF1E-45C80481265D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

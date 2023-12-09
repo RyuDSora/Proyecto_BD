@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6917B405-EB2A-DE2D-00DE-D1DC2B5A74A4" containerWithKeyObject="463F535A-3FAD-D29E-A7A0-3521F19525CE" localFKIndex="0E5B8E38-6C36-1684-E7FA-6BBA89159117" name="TBL_LISTS_TBL_PRIV_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:40:29 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<referredTableLongName>TBL_PRIVACIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1D4FA44A-7207-B9C9-5F20-511FE8D95D4E</referredTableID>
+<keyObject>85041817-98E9-1156-FB00-B05AE9EB3399</keyObject>
+<referredKeyID>85041817-98E9-1156-FB00-B05AE9EB3399</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>privacidad_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

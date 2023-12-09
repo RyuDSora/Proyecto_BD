@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B6B299D-AC01-1D5D-B765-BCCE07F9898B" name="TBL_USUARIOS_BLOQUEADOS">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:38:37 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="7F6FFD6D-A7F7-F85F-91FD-A01D56619677">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:40:25 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F07F808D-3264-1575-4A47-C1D301BB70A6" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="id_usuario_bloqueado" id="6D994778-A6ED-2201-9ECE-42E08DF2D904">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:41:56 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97CDC777-F213-4486-0B8F-B9B47B14BCAA" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="fecha_bloqueo" id="93785700-83D2-30CF-8FB6-980C80066BC8">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:43:12 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98B8E438-F088-5258-5B53-9D67CF0D7FE5" name="TBL_USUARIOS_BLOQUEADOS_PK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:40:51 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F6FFD6D-A7F7-F85F-91FD-A01D56619677"/>
+<colUsage columnID="6D994778-A6ED-2201-9ECE-42E08DF2D904"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50B2395F-AFD8-75CF-0057-CF3AEBCB38C7" name="TBL_US_BLOQ_TBL_US_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:40:25 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F6FFD6D-A7F7-F85F-91FD-A01D56619677"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33AF6B67-395A-8F8D-DE00-79613BBD9D04" name="TBL_US_BLOQ_TBL_US_FKv2">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:41:56 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D994778-A6ED-2201-9ECE-42E08DF2D904"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

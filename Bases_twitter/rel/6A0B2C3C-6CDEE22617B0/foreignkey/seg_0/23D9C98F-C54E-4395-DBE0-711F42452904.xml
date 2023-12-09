@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="23D9C98F-C54E-4395-DBE0-711F42452904" containerWithKeyObject="3B435287-E044-F167-718F-C89E241EFBBD" localFKIndex="D5D6D604-740D-B137-D449-0A127506FBDB" name="TBL_LIKES_TBL_COM_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:36:28 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<referredTableLongName>TBL_COMENTARIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8B8F8756-09C7-F040-18F4-40B5D0D030F9</referredTableID>
+<keyObject>6A001791-08C7-556E-EBB9-556AEC7C0AC6</keyObject>
+<referredKeyID>6A001791-08C7-556E-EBB9-556AEC7C0AC6</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_comentarios</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

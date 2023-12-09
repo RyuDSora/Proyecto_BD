@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>input::placeholder { user-select: none; -webkit-user-select: none; } iframe { color-scheme: auto; }</style>
+    <style>@font-face {
+        font-family: TwitterChirp;
+        src: url(https://abs.twimg.com/responsive-web/client-web/Chirp-Light.3a18e64a.woff2) format('woff2'), url(https://abs.twimg.com/responsive-web/client-web/Chirp-Light.7a5673aa.woff) format('woff');
+        font-weight: 300;
+        font-style: 'normal';
+        font-display: 'swap';
+      }
+      @font-face {
+        font-family: TwitterChirp;
+        src: url(https://abs.twimg.com/responsive-web/client-web/Chirp-Regular.80fda27a.woff2) format('woff2'), url(https://abs.twimg.com/responsive-web/client-web/Chirp-Regular.60b215ba.woff) format('woff');
+        font-weight: 400;
+        font-style: 'normal';
+        font-display: 'swap';
+      }
+      @font-face {
+        font-family: TwitterChirp;
+        src: url(https://abs.twimg.com/responsive-web/client-web/Chirp-Medium.f8e2739a.woff2) format('woff2'), url(https://abs.twimg.com/responsive-web/client-web/Chirp-Medium.20fc288a.woff) format('woff');
+        font-weight: 500;
+        font-style: 'normal';
+        font-display: 'swap';
+      }
+      @font-face {
+        font-family: TwitterChirp;
+        src: url(https://abs.twimg.com/responsive-web/client-web/Chirp-Bold.ebb56aba.woff2) format('woff2'), url(https://abs.twimg.com/responsive-web/client-web/Chirp-Bold.a573679a.woff) format('woff');
+        font-weight: 700;
+        font-style: 'normal';
+        font-display: 'swap';
+      }
+      @font-face {
+        font-family: TwitterChirp;
+        src: url(https://abs.twimg.com/responsive-web/client-web/Chirp-Heavy.f44ae4ea.woff2) format('woff2'), url(https://abs.twimg.com/responsive-web/client-web/Chirp-Heavy.d70ec7ca.woff) format('woff');
+        font-weight: 800;
+        font-style: 'normal';
+        font-display: 'swap';
+      }
+      @font-face {
+        font-family: TwitterChirpExtendedHeavy;
+        src: url(https://abs.twimg.com/fonts/v1/chirp-extended-heavy-web.woff2) format('woff2'), url(https://abs.twimg.com/fonts/v1/chirp-extended-heavy-web.woff) format('woff');
+        font-weight: 800;
+        font-style: 'normal';
+        font-display: 'swap';
+      }</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <script nonce="NWJmODYwZWUtMmI5OC00MjliLWFiMmYtYWNhZGExOTAwNmEz">
+        !function(e, t, n, s, u, a) {
+            e.twq || (s = e.twq = function() {
+                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }
+            ,
+            s.version = '1.1',
+            s.queue = [],
+            u = t.createElement(n),
+            u.async = !0,
+            u.src = '',
+            a = t.getElementsByTagName(n)[0],
+            a.parentNode.insertBefore(u, a))
+        }(window, document, 'script');
+        twq('config', 'ogf5s');
+    </script>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            #placeholder {
+                background-color: #000000
+            }
+
+            #ScriptLoadFailure span {
+                color: #FFFFFF !important;
+            }
+        }
+    </style>
+    <style>
+        html,body {
+            height: 100%;
+        }
+
+        ::cue {
+            white-space: normal
+        }
+    </style>
+    <style id="react-native-stylesheet">
+        /*[stylesheet-group="0"] {
+        }
+*/
+        html {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+
+        body {
+            margin: 0;
+        }
+
+        button::-moz-focus-inner,input::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+        input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        /*[stylesheet-group="0.1"] {
+        }*/
+
+        :focus:not([data-focusvisible-polyfill]) {
+            outline: none;
+        }
+/*
+        [stylesheet-group="0.5"] {
+        }
+*/
+        .css-18t94o4 {
+            cursor: pointer;
+        }
+
+/*        [stylesheet-group="1"] {
+        }
+*/
+        .css-1dbjc4n {
+            -ms-flex-align: stretch;
+            -ms-flex-direction: column;
+            -ms-flex-negative: 0;
+            -ms-flex-preferred-size: auto;
+            -webkit-align-items: stretch;
+            -webkit-box-align: stretch;
+            -webkit-box-direction: normal;
+            -webkit-box-orient: vertical;
+            -webkit-flex-basis: auto;
+            -webkit-flex-direction: column;
+            -webkit-flex-shrink: 0;
+            align-items: stretch;
+            border: 0 solid black;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-basis: auto;
+            flex-direction: column;
+            flex-shrink: 0;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            min-height: 0px;
+            min-width: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .css-901oao {
+            border: 0 solid black;
+            box-sizing: border-box;
+            color: rgba(0,0,0,1.00);
+            display: inline;
+            font: 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .css-16my406 {
+            color: inherit;
+            font: inherit;
+            white-space: inherit;
+        }
+
+        .css-1hf3ou5 {
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+        }
+
+  /*      [stylesheet-group="2"] {
+        }
+*/
+        .r-13awgt0 {
+            -ms-flex: 1 1 0%;
+            -webkit-flex: 1;
+            flex: 1;
+        }
+
+        .r-4qtqp9 {
+            display: inline-block;
+        }
+
+        .r-ywje51 {
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+        }
+
+        .r-hvic4v {
+            display: none;
+        }
+
+        .r-sdzlij {
+            border-bottom-left-radius: 9999px;
+            border-bottom-right-radius: 9999px;
+            border-top-left-radius: 9999px;
+            border-top-right-radius: 9999px;
+        }
+
+        .r-1phboty {
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-right-style: solid;
+            border-top-style: solid;
+        }
+
+        .r-rs99b7 {
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-top-width: 1px;
+        }
+
+        .r-6koalj {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+  /*      [stylesheet-group="2.1"] {
+        }
+*/
+        .r-ymttw5 {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+  /*  [stylesheet-group="2.2"] {
+        }
+*/
+        .r-12vffkv>* {
+            pointer-events: auto;
+        }
+
+        .r-12vffkv {
+            pointer-events: none!important;
+        }
+
+        .r-14lw9ot {
+            background-color: rgba(255,255,255,1.00);
+        }
+
+        .r-1p0dtai {
+            bottom: 0px;
+        }
+
+        .r-1d2f490 {
+            left: 0px;
+        }
+
+        .r-1xcajam {
+            position: fixed;
+        }
+
+        .r-zchlnj {
+            right: 0px;
+        }
+
+        .r-ipm5af {
+            top: 0px;
+        }
+
+        .r-yyyyoo {
+            fill: currentcolor;
+        }
+
+        .r-1xvli5t {
+            height: 1.25em;
+        }
+
+        .r-dnmrzs {
+            max-width: 100%;
+        }
+
+        .r-bnwqim {
+            position: relative;
+        }
+
+        .r-1plcrui {
+            vertical-align: text-bottom;
+        }
+
+        .r-lrvibr {
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .r-18jsvk2 {
+            color: rgba(15,20,25,1.00);
+        }
+
+        .r-wy61xf {
+            height: 72px;
+        }
+
+        .r-u8s1d {
+            position: absolute;
+        }
+
+        .r-1blnp2b {
+            width: 72px;
+        }
+
+        .r-1ykxob0 {
+            top: 60%;
+        }
+
+        .r-1awozwy {
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+
+        .r-q4m81j {
+            text-align: center;
+        }
+
+        .r-bcqeeo {
+            min-width: 0px;
+        }
+
+        .r-qvutc0 {
+            word-wrap: break-word;
+        }
+
+        .r-rjixqe {
+            line-height: 20px;
+        }
+
+        .r-37j5jr {
+            font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        }
+
+        .r-a023e6 {
+            font-size: 15px;
+        }
+
+        .r-16dba41 {
+            font-weight: 400;
+        }
+
+        .r-poiln3 {
+            font-family: inherit;
+        }
+
+        .r-2yi16 {
+            min-height: 36px;
+        }
+
+        .r-1qi8awa {
+            min-width: 36px;
+        }
+
+        .r-o7ynqc {
+            -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+        }
+
+        .r-6416eg {
+            -moz-transition-property: background-color, box-shadow;
+            -webkit-transition-property: background-color, box-shadow;
+            transition-property: background-color, box-shadow;
+        }
+
+        .r-1ny4l3l {
+            outline-style: none;
+        }
+
+        .r-b88u0q {
+            font-weight: 700;
+        }
+
+        .r-18u37iz {
+            -ms-flex-direction: row;
+            -webkit-box-direction: normal;
+            -webkit-box-orient: horizontal;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .r-16y2uox {
+            -ms-flex-positive: 1;
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            flex-grow: 1;
+        }
+
+        .r-1777fci {
+            -ms-flex-pack: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .r-4y9mq {
+            position: absolute;
+            visibility: hidden;
+            top: 0;
+            width: 50px;
+            pointer-events: none
+        }
+
+        .r-4y9mq.loaded {
+            visibility: visible;
+            top: 50vh;
+            width: 50px
+        }
+    </style>
+    <title>X. Es lo que está pasando / X</title>
+    <style id="googleidentityservice_button_styles">
+        .qJTHM{/*-webkit-user-select:none;*/color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:"Roboto-Regular",arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}
+        .ynRLnc{left:-9999px;position:absolute;top:-9999px}
+        .L6cTce{display:none}
+        .bltWBb{word-break:break-all}
+        .hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}
+        .Bz112c-W3lGp{height:16px;width:16px}
+        .Bz112c-E3DyYd{height:20px;width:20px}
+        .Bz112c-r9oPif{height:24px;width:24px}
+        .Bz112c-uaxL4e{-webkit-border-radius:10px;border-radius:10px}
+        .LgbsSe-Bz112c{display:block}
+        .S9gUrf-YoZ4jf,.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}
+        .fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}
+        .P1ekSe-ZMv3u>div:nth-child(1){background-color:#1a73e8!important}
+        .P1ekSe-ZMv3u>div:nth-child(2),
+        .P1ekSe-ZMv3u>div:nth-child(3){background-image:linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(to right,#1a73e8,#1a73e8)!important}
+        .haAclf{display:inline-block}
+        .nsm7Bb-HzV7m-LgbsSe{-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;
+            transition:background-color .218s,border-color .218s;/*-webkit-user-select:none;-webkit-appearance:none;*/background-color:#fff;background-image:none;border:1px solid #dadce0;
+            color:#3c4043;cursor:pointer;font-family:"Google Sans",arial,sans-serif;font-size:14px;height:40px;letter-spacing:0.25px;outline:none;overflow:hidden;padding:0 12px;
+            position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}
+        @media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}
+        .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:14px;height:32px;letter-spacing:0.25px;padding:0 10px}
+        .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:11px;height:20px;letter-spacing:0.3px;padding:0 8px}
+        .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}
+        .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}
+        .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}
+        .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{-webkit-border-radius:20px;border-radius:20px}
+        .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{-webkit-border-radius:16px;border-radius:16px}
+        .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{-webkit-border-radius:10px;border-radius:10px}
+        .nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}
+        .nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}
+        .nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}
+        .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}
+        .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}
+        .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}
+        .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}
+        .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}
+        .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;justify-content:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:3px;border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:14px;border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:8px;border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-flex-direction:row;flex-direction:row;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;flex-grow:1;font-family:"Google Sans",arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:hover,.nsm7Bb-HzV7m-LgbsSe:focus{-webkit-box-shadow:none;box-shadow:none;border-color:#d2e3fc;outline:none}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.04)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{-webkit-border-radius:50%;border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:"Roboto";font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:0;border-top-left-radius:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{-webkit-border-radius:4px;border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}
+        .L5Fo6c-bF1uUb:focus{border:none;outline:none}
+        /*sentinel{}*/</style>
+        <style>
+            #credential_picker_container{border:none;height:330px;position:fixed;right:20px;top:20px;width:391px;z-index:9999}#credential_picker_container iframe{border:none;width:391px;height:330px}#g_a11y_announcement{height:1px;left:-10000px;overflow:hidden;position:absolute;top:auto;width:1px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{-webkit-border-radius:4px;border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}/*sentinel{}*/
+        </style>
+</head>
+<body>
+    <div style="height: 100%;display: flex; border: dashed; border-color: red;">
+        <div class="css-1dbjc4n">
+            <div class="css-1dbjc4n">
+                <div class="css-1dbjc4n r-13qz1uu r-417010">
+                    <main role="main" class="css-1dbjc4n r-16y2uox r-1wbh5a2">
+                        <div class="css-1dbjc4n r-150rngu r-16y2uox r-1wbh5a2">
+                            <div class="css-1dbjc4n r-13awgt0">
+                                <div class="css-1dbjc4n r-791edh r-1euycsn r-tv6buo">
+                                    <div class="css-1dbjc4n r-1777fci r-1qmwkkh r-nsbfu8">
+                                        <div class="css-1dbjc4n r-jjmaes r-1nz9sz9 r-1pcd2l5 r-13qz1uu">
+                                            <div dir="ltr" class="css-901oao r-18jsvk2 r-fm7h5w r-19oahor r-b88u0q r-nm9kes r-1ncnki0 r-4afqvc r-bcqeeo r-qvutc0">
+                                                <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Lo que está pasando ahora</span>
+                                            </div>
+                                            <div dir="ltr" class="css-901oao r-18jsvk2 r-fm7h5w r-1yjpyg1 r-b88u0q r-ueyrd6 r-zd98yo r-bcqeeo r-qvutc0">
+                                                <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Únete Hoy</span>
+                                            </div>
+                                            <div class="css-1dbjc4n">
+                                                <div class="css-1dbjc4n r-13awgt0 r-117bsoe r-17w48nw r-1ipicw7" data-testid="google_sign_in_container" >
+                                                    <div class="S9gUrf-YoZ4jf" style="position: relative;">
+                                                        <iframe src="" id="gsi_654030_707685" title="Botón Iniciar sesión con Google" style="display: block; position: relative; top: 0px; left: 0px; height: 44px; width: 320px; border: 0px; margin: -2px -10px;"></iframe>
+                                                    </div>
+                                                </div>
+                                                <div role="button" tabindex="0" class="css-18t94o4 css-1dbjc4n r-sdzlij r-1phboty r-rs99b7 r-a9p05 r-eu3ka r-p1pxzi r-17w48nw r-2yi16 r-1qi8awa r-1ny4l3l r-ymttw5 r-o7ynqc r-6416eg r-lrvibr r-1ipicw7" data-testid="apple_sign_in_button" style="border-color: rgb(207, 217, 222); background-color: rgb(255, 255, 255);">
+                                                    <div dir="ltr" class="css-901oao r-1awozwy r-18jsvk2 r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0" >
+                                                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-z80fyv r-1d4mawv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03" style="display: none;">
+                                                            <g><path d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.572-2.27 
+                                                                                1.206-2.98.804-.94 2.142-1.64 3.248-1.68.03.13.05.28.05.43zm4.565 15.71c-.03.07-.463 1.58-1.518 3.12-.945 1.34-1.94 
+                                                                                2.71-3.43 2.71-1.517 0-1.9-.88-3.63-.88-1.698 0-2.302.91-3.67.91-1.377 0-2.332-1.26-3.428-2.8-1.287-1.82-2.323-4.63-2.323-7.28 
+                                                                                0-4.28 2.797-6.55 5.552-6.55 1.448 0 2.675.95 3.6.95.865 0 2.222-1.01 3.902-1.01.613 0 2.886.06 4.374 2.19-.13.09-2.383 
+                                                                                1.37-2.383 4.19 0 3.26 2.854 4.42 2.955 4.45z"></path></g>
+                                                        </svg>
+                                                        <span class="css-901oao css-16my406 css-1hf3ou5 r-poiln3 r-a023e6 r-rjixqe r-bcqeeo r-qvutc0">
+                                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Registrarse con Apple</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="css-1dbjc4n r-1p6iasa r-17w48nw r-1ipicw7">
+                                                    <div class="css-1dbjc4n r-18u37iz r-lz04qo r-1p6iasa">
+                                                        <div class="css-1dbjc4n r-13awgt0 r-1iusvr4 r-1777fci r-4amgru r-bcqeeo">
+                                                            <div class="css-1dbjc4n r-1sw30gj r-109y4c4"></div>
+                                                        </div>
+                                                        <div class="css-1dbjc4n r-hvzyjp r-1iusvr4 r-4amgru r-bcqeeo">
+                                                            <div dir="ltr" class="css-901oao r-18jsvk2 r-37j5jr r-a023e6 r-16dba41 r-rjixqe r-bcqeeo r-qvutc0" >
+                                                                <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">o</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="css-1dbjc4n r-13awgt0 r-1iusvr4 r-1777fci r-4amgru r-bcqeeo">
+                                                            <div class="css-1dbjc4n r-1sw30gj r-109y4c4"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="" role="link" class="css-4rbku5 css-18t94o4 css-1dbjc4n r-sdzlij r-1phboty r-rs99b7 r-1loqt21 r-a9p05 r-eu3ka r-5oul0u r-17w48nw r-2yi16 r-1qi8awa r-1ny4l3l r-ymttw5 r-o7ynqc r-6416eg r-lrvibr r-1ipicw7" data-testid="signupButton" style="border-color: rgba(0, 0, 0, 0); background-color: rgb(29, 155, 240);">
+                                                    <div dir="ltr" class="css-901oao r-1awozwy r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0" style="color: rgb(255, 255, 255);">
+                                                        <span class="css-901oao css-16my406 css-1hf3ou5 r-poiln3 r-a023e6 r-rjixqe r-bcqeeo r-qvutc0">
+                                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Crear cuenta</span>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                                <div dir="ltr" class="css-901oao r-13awgt0 r-37j5jr r-1gkfh8e r-16dba41 r-56xrmm r-117bsoe r-17w48nw r-bcqeeo r-1ipicw7 r-qvutc0" style="color: rgb(83, 100, 113);">
+                                                    Al registrarte, aceptas los <a href="" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao css-16my406 r-1loqt21 r-poiln3 r-bcqeeo r-qvutc0" style="color: rgb(29, 155, 240);">
+                                                        <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Términos de servicio</span>
+                                                    </a> y la 
+                                                    <a href="" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao css-16my406 r-1loqt21 r-poiln3 r-bcqeeo r-qvutc0" style="color: rgb(29, 155, 240);">
+                                                        <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Política de privacidad</span>
+                                                    </a>, incluida la política de <a href="" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao css-16my406 r-1loqt21 r-poiln3 r-bcqeeo r-qvutc0" style="color: rgb(29, 155, 240);">
+                                                        <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Uso de Cookies</span>
+                                                    </a>.
+                                                </div>
+                                                <div class="css-1dbjc4n r-2o02ov">
+                                                    <div dir="ltr" class="css-901oao r-18jsvk2 r-13awgt0 r-37j5jr r-1inkyih r-b88u0q r-rjixqe r-117bsoe r-17w48nw r-bcqeeo r-qvutc0">
+                                                        <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">¿Ya tienes una cuenta?</span>
+                                                    </div>
+                                                    <a href="/login" role="link" class="css-4rbku5 css-18t94o4 css-1dbjc4n r-sdzlij r-1phboty r-rs99b7 r-1loqt21 r-a9p05 r-eu3ka r-5oul0u r-17w48nw r-2yi16 r-1qi8awa r-1ny4l3l r-ymttw5 r-o7ynqc r-6416eg r-lrvibr r-1ipicw7" data-testid="loginButton" style="border-color: rgb(207, 217, 222); background-color: rgba(0, 0, 0, 0);">
+                                                        <div dir="ltr" class="css-901oao r-1awozwy r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0" style="color: rgb(29, 155, 240);"><span class="css-901oao css-16my406 css-1hf3ou5 r-poiln3 r-a023e6 r-rjixqe r-bcqeeo r-qvutc0">
+                                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Iniciar sesión</span>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="css-1dbjc4n r-13awgt0 r-1777fci r-12zvaga r-1udh08x r-t60dpp">
+                                        <div class="css-1dbjc4n r-1p0dtai r-13awgt0 r-1777fci r-1d2f490 r-u8s1d r-u9bbvc r-zchlnj r-ipm5af">
+                                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-rxcuwo r-1777fci r-m327ed r-dnmrzs r-494qqr r-bnwqim r-1plcrui r-lrvibr">
+                                                <g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="css-1dbjc4n r-p1pxzi r-wfqgy4 r-zd22at">
+                                    <nav aria-label="Pie de Pagina" role="navigation" class="css-1dbjc4n r-18u37iz r-1w6e6rj r-1777fci r-ymttw5 r-1f1sjgu">
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Información</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Descarga la app de X</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Centro de Ayuda</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Condiciones de Servicios</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Politicas de Privacidad</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Politicas de Cookies</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Accesibilidad</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Informacion de Anuncios</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Blog</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Estados</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Empleos</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Recursos para Marcas</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Publicidad</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Marketing</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">X para Empresas</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Desarrolladores</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Guias</span>
+                                        </a>
+                                        <a href="#" dir="ltr" rel="noopener noreferrer nofollow" target="_blank" role="link" class="css-4rbku5 css-18t94o4 css-901oao r-1loqt21 r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">Configuracion</span>
+                                        </a>
+                                        <div dir="ltr" class="css-901oao r-37j5jr r-n6v787 r-16dba41 r-1cwl3u0 r-1p6iasa r-bcqeeo r-i023vh r-qvutc0" style="color: rgb(83, 100, 113);">
+                                            <span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">© 2023 X Corp.</span>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

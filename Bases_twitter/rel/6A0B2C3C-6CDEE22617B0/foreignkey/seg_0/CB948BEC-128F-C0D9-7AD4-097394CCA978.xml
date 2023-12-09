@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CB948BEC-128F-C0D9-7AD4-097394CCA978" containerWithKeyObject="58C42C69-D07B-5F5C-DE24-68A2DA852D13" localFKIndex="54385097-7B34-D27B-DCDF-0C40D7A4C28B" name="TBL_PUB_TBL_PUB_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 01:10:43 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<referredTableLongName>TBL_PUBLICACIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>58C42C69-D07B-5F5C-DE24-68A2DA852D13</referredTableID>
+<keyObject>CA4BF775-7625-0986-6D71-470AC0B2C6FB</keyObject>
+<referredKeyID>CA4BF775-7625-0986-6D71-470AC0B2C6FB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_publicacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32BECF2C-EAD4-E60C-200D-E5FCED9CCBCC" name="TBL_SEGUIDORES">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:05:11 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_seguido" id="E2DE54A4-4057-50E3-B39D-3419109C9D78">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 17:49:36 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="0B031295-8D8D-19CD-18E2-10C7032F6CDC">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:57:48 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BB8076D-5D2C-3CE1-A943-FAF6F60651E5" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="id_usuario_seguidor" id="9856BD2F-B192-85E8-9625-623C4A23F6A4">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:58:07 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17641B36-A8AA-2662-B57D-7573B4E0BFE8" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="fecha_seguido" id="E8611777-A22E-2EF6-5928-8CDE113D2BC9">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:07:47 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="693F33F3-B876-2CE8-D3EC-BB0626F3F4B2" name="TBL_SEGUIDORES_PK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:07:17 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B031295-8D8D-19CD-18E2-10C7032F6CDC"/>
+<colUsage columnID="9856BD2F-B192-85E8-9625-623C4A23F6A4"/>
+<colUsage columnID="E2DE54A4-4057-50E3-B39D-3419109C9D78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD2519F8-80E6-CF6A-978E-A057041E217A" name="TBL_SEG_TBL_US_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:57:48 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B031295-8D8D-19CD-18E2-10C7032F6CDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="617D7153-1BC8-1E9B-CD98-9B05268AE04B" name="TBL_SEG_TBL_US_FKv2">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:58:07 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9856BD2F-B192-85E8-9625-623C4A23F6A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E992E945-A45B-9914-329E-E2AF00D96C52" containerWithKeyObject="8EC53D5A-4440-5995-5166-5414C20AE756" localFKIndex="F34BA3D3-F121-D19C-CF57-25F6A7B6218E" name="TBL_MSJS_TBL_MSJS_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:22:15 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<referredTableLongName>TBL_MENSAJES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8EC53D5A-4440-5995-5166-5414C20AE756</referredTableID>
+<keyObject>E29BA154-7F82-B1F2-EA72-E53FDB08E012</keyObject>
+<referredKeyID>E29BA154-7F82-B1F2-EA72-E53FDB08E012</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_mensaje</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

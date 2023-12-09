@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F5977DC8-73AE-AE2A-33FB-74319E4CE38A" containerWithKeyObject="EAF919FE-7617-A097-4C0B-22DBD3016983" localFKIndex="0AF13492-319A-300D-004F-C7C23B1C25A8" name="TBL_MDA_TBL_TIPOS_MDA_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:01:25 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<referredTableLongName>TBL_TIPOS_MEDIAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>176CD261-DD8D-F173-A0D0-DE97A55E55CA</referredTableID>
+<keyObject>A37160F6-E113-2ACC-90C8-6EBDA49EF6DB</keyObject>
+<referredKeyID>A37160F6-E113-2ACC-90C8-6EBDA49EF6DB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>tipo_media_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="47BE7987-47D8-A0AB-B26F-F134A048401F" mainViewID="438B181E-CC22-7015-C7F9-3CB535696796">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 22:22:19 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

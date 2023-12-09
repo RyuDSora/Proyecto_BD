@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45912E39-9114-E44A-759D-C0A5F94BD2BB" name="TBL_LUGARES">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:12:49 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_lugar" id="9E0E04BA-63D0-C781-C086-E6DC726E1665">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:13:27 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_lugar_padre" id="0A57AED2-EECD-62D2-96FC-97C212D8C969">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:39:04 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59E37DE6-227B-BB18-A972-48FECE6E5E0A" referredColumn="9E0E04BA-63D0-C781-C086-E6DC726E1665"/>
+</associations>
+</Column>
+<Column name="nombre_lugar" id="220B6736-4C2B-00EF-9D3F-EAF6BCE1D5A9">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:14:31 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitud" id="AC90DCE6-A2B0-37F8-49DB-8747D00FDA3A">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:15:04 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitud" id="AB8F78BC-367D-5D1E-6C83-DA8A16FC65D7">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:15:04 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E62E24EF-15F1-E80B-0DC1-D15450E7C63F" name="TBL_LUGARES_PK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:13:27 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E0E04BA-63D0-C781-C086-E6DC726E1665"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE65CAE4-85C2-1B71-0136-69DA0CA6D4C0" name="TBL_LUG_TBL_LUG_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:39:04 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A57AED2-EECD-62D2-96FC-97C212D8C969"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

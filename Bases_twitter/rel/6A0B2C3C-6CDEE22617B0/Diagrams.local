@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="3505EEE1-1943-BE6C-125E-A130557503AB" name="Bases_Twitter" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

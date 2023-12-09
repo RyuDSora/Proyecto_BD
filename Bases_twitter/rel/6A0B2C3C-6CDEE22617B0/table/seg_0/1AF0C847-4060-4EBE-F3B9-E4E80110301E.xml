@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1AF0C847-4060-4EBE-F3B9-E4E80110301E" name="TBL_REPOSTS">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:25:40 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_34</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_repost" id="B5D88ADA-6ADD-F05C-4935-76362D8EE41F">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:26:03 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7613D0DF-FEDD-636E-1AF7-A507707239D9" referredColumn="83600E1A-6341-8760-73AC-20F962DB3D65"/>
+</associations>
+</Column>
+<Column name="id_publicacion" id="58A5E8FB-27E8-4A3E-32A4-CA6468EAB01E">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:27:37 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BF3C2F8-3840-57E6-CCFA-DB77DE50EDD6" referredColumn="83600E1A-6341-8760-73AC-20F962DB3D65"/>
+</associations>
+</Column>
+<Column name="id_usuario_repost" id="6587EB05-21E2-D238-23F3-173FB34F97F7">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:29:12 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6BBA963-AD1A-9750-B10D-63292F3F5D93" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="fecha_repost" id="2A2D4761-E23F-46D8-A291-8429189A48F7">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:28:48 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF4FE786-CF93-B9B1-976A-19EE28B0F299" name="TBL_RE-POSTS_PK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:26:46 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5D88ADA-6ADD-F05C-4935-76362D8EE41F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="072BF11D-4F10-4924-3DFD-D86F320C466C" name="TBL_REP_TBL_PUBL_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:26:03 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5D88ADA-6ADD-F05C-4935-76362D8EE41F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5251089D-F8AF-4C22-0AC5-6E9D6CAFBBA3" name="TBL_REP_TBL_PUBL_FKv2">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:27:37 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58A5E8FB-27E8-4A3E-32A4-CA6468EAB01E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06066E38-5290-4079-1EEE-A2CED27C1A4B" name="TBL_REPOSTS_TBL_US_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:29:12 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6587EB05-21E2-D238-23F3-173FB34F97F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

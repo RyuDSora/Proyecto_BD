@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22C71B97-C92F-B4B0-A2D0-67B130A44DA0" name="TBL_TIPO_NOTIFICACION">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:04:33 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_notificacion" id="2776FC33-2F51-6239-B61C-B3AEB185C935">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:05:40 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="notificacion" id="D7650FB2-A9C4-0831-1AC9-44C67E52CCB5">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:05:59 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D2D79ED-EDE1-7081-AC52-DDE2046DC0F2" name="TBL_TIPO_NOTIFICACION_PK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:05:40 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2776FC33-2F51-6239-B61C-B3AEB185C935"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

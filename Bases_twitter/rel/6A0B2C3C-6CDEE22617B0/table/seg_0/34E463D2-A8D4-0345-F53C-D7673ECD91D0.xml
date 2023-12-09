@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34E463D2-A8D4-0345-F53C-D7673ECD91D0" name="TBL_BUSQUEDAS">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:22:38 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_busqueda" id="C88192C5-62B3-3EC2-FC27-A4723C6098D5">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:23:08 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="29BEB9F9-C9D6-799E-C837-9C8019745A47">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:24:24 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="983A5849-C6A2-518B-8EFD-43D7D6656C43" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="palabras" id="962E9013-E1E9-4954-16FE-63E886960EB8">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:23:41 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_busqueda" id="EF936B00-BB60-1BFD-53FC-2DDF7124B41C">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:24:01 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6A76DEE-E558-0E83-1003-6556850367FD" name="TBL_BUSQUEDAS_PK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:23:08 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C88192C5-62B3-3EC2-FC27-A4723C6098D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22DDBDC3-A69E-88C1-49B7-55572AC0A789" name="TBL_BUSQ_TBL_US_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:24:24 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29BEB9F9-C9D6-799E-C837-9C8019745A47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

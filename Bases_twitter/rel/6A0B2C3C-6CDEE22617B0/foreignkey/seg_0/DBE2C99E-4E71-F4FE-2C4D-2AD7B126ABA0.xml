@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DBE2C99E-4E71-F4FE-2C4D-2AD7B126ABA0" containerWithKeyObject="34A2802C-9FCB-585B-1A55-84A0695636A0" localFKIndex="0EED73D9-ACB4-6CFF-AEE9-4D7C994B7B2F" name="TBL_US_TBL_GEN_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 23:23:53 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<referredTableLongName>TBL_GENEROS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0D82D7C1-BE53-5603-B58B-D8281A1B473F</referredTableID>
+<keyObject>24AAD685-BF15-AAF6-8AD0-CDFF26A36554</keyObject>
+<referredKeyID>24AAD685-BF15-AAF6-8AD0-CDFF26A36554</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_genero</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

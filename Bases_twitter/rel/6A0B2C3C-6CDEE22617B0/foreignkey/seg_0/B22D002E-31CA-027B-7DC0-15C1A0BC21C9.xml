@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B22D002E-31CA-027B-7DC0-15C1A0BC21C9" containerWithKeyObject="8B8F8756-09C7-F040-18F4-40B5D0D030F9" localFKIndex="046350C7-A4DB-5333-C4AB-5E4E4CE56147" name="TBL_COMS_TBL_HASH_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:54:36 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<referredTableLongName>TBL_HASHTAGS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3A20303B-5331-C302-AA95-B0372551F72E</referredTableID>
+<keyObject>7BD3C752-4B2F-A9A1-3945-6FB633EC9F4A</keyObject>
+<referredKeyID>7BD3C752-4B2F-A9A1-3945-6FB633EC9F4A</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_hashtag</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="42AC9191-3AFD-494E-51FA-8F59C816B6DE" containerWithKeyObject="3B435287-E044-F167-718F-C89E241EFBBD" localFKIndex="71035B96-12B4-475D-1B18-A82113B07624" name="TBL_LIKES_TBL_RE-POSTS_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:36:14 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<referredTableLongName>TBL_RE-POSTS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1AF0C847-4060-4EBE-F3B9-E4E80110301E</referredTableID>
+<keyObject>FF4FE786-CF93-B9B1-976A-19EE28B0F299</keyObject>
+<referredKeyID>FF4FE786-CF93-B9B1-976A-19EE28B0F299</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_repost</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

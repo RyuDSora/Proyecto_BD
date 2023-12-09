@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B8F8756-09C7-F040-18F4-40B5D0D030F9" name="TBL_COMENTARIOS">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 22:43:43 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_comentarios" id="55FDDC11-02F5-E0CF-4A1E-682496F93CC0">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 22:44:28 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_publicacion" id="A5CBDB30-74A1-7785-2728-8C01924C66AD">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:14:00 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5161EAD-072D-AE05-C4B5-415C49090534" referredColumn="83600E1A-6341-8760-73AC-20F962DB3D65"/>
+</associations>
+</Column>
+<Column name="id_usuario_comenta" id="5FDA23D7-E88B-C034-AA70-9286494BF1F9">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:14:52 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2106E49-F1B2-221E-004E-E33A58A98C0E" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="id_comentario_padre" id="BE9ED349-D20F-A434-6C6D-F69F18EB6A5D">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 01:34:00 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E482746C-9BE6-27FE-1391-7645A906232A" referredColumn="55FDDC11-02F5-E0CF-4A1E-682496F93CC0"/>
+</associations>
+</Column>
+<Column name="id_hashtag" id="A9D349B7-B309-4069-E5EE-4267C979CFF3">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:54:36 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B22D002E-31CA-027B-7DC0-15C1A0BC21C9" referredColumn="B2AA35D3-FD51-A432-89AE-AA87083D41CD"/>
+</associations>
+</Column>
+<Column name="comentario" id="B3E75B30-32CC-4BE9-E1D4-3D1DCCE29C2E">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 22:45:47 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_comentario" id="697CB1A9-4E82-E9CF-B0B5-15BEE5CD939D">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 22:46:10 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A001791-08C7-556E-EBB9-556AEC7C0AC6" name="TBL_MENSIONES_PK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 22:44:28 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55FDDC11-02F5-E0CF-4A1E-682496F93CC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4513AC3-1F46-5D20-F9B8-E31202821C15" name="TBL_COM_TBL_COM_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 01:34:00 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE9ED349-D20F-A434-6C6D-F69F18EB6A5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="131F969F-E142-28AD-3168-3E9110A48C5E" name="TBL_COMS_TBL_PUBLS_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:14:00 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5CBDB30-74A1-7785-2728-8C01924C66AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F85AB6C4-D3A0-5ECC-DC8D-E236826DED35" name="TBL_COMS_TBL_US_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:14:52 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FDA23D7-E88B-C034-AA70-9286494BF1F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="046350C7-A4DB-5333-C4AB-5E4E4CE56147" name="TBL_COMS_TBL_HASH_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:54:36 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9D349B7-B309-4069-E5EE-4267C979CFF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,23 @@
+instalar el gestor de base de datos oracle 
+https://www.oracle.com/database/technologies/xe-downloads.html
+
+instalar el paquete NodeJS
+https://nodejs.org/en/download/
+
+hacer el diagrama relacional usando como herramienta SQL Developer,
+
+Crear el nuevo esquema(usuario)
+abrir una nueva conexion como usuario "System" y ejecutar el script USER.sql
+cerrar la conexion system y abrir una nueva conexion con el nuevo usuario
+
+user: TWITTERX
+password: oracle
+
+crear las tablas de nuestra base de datos, ejecutamos el script DDL.sql
+para hacer las primeras pruebas ingresamos datos mediante el script DML.sql
+
+
+
+ACCEDIENDO DESDE NodeJS
+necesitamos tener las siguientes librerias o dependencias instaladas en nuestro directorio
+oracledb: npm install oracledb

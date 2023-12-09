@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="643C2F26-56AE-6AE1-568B-60D12B957DFE" name="TBL_LISTAS_X_USUARIOS">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:00:28 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LIST_X_US_ID" id="1724DFB6-48BD-566B-1B08-B25117C9207C">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:01:13 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_lista" id="E6CA3BA6-57DB-0EBB-2A4A-5058DC63E7B7">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:01:19 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="104C3188-2BB9-442C-C145-33BE83A7EE20" referredColumn="E5B0CD6D-34E0-758C-E863-F0519AC5E70B"/>
+</associations>
+</Column>
+<Column name="id_usuario" id="62BAB2A9-F0BB-99B0-2535-D4BD25224511">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:01:25 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7DF85F2-D3FD-041B-583F-6DEF2DC1E168" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55FCAA71-669D-E022-88AF-A454E7F6030C" name="TBL_LISTAS_X_USUARIOS_PK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:01:13 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1724DFB6-48BD-566B-1B08-B25117C9207C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3E5F78C-DE41-A0FD-9E7C-F8EC69D40B3E" name="TBL_LISTS_X_US_TBL_LISTS_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:01:19 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6CA3BA6-57DB-0EBB-2A4A-5058DC63E7B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FF13197-6D60-682D-7229-20B8D7FE7F63" name="TBL_LISTS_X_US_TBL_US_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 19:01:25 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62BAB2A9-F0BB-99B0-2535-D4BD25224511"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

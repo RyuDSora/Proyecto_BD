@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Bases_twitter" id="39BBB2D6-70A1-9913-A28F-3349F92DCC4A" version="3.5">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-22 22:22:19 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>39BBB2D6-70A1-9913-A28F-3349F92DCC4A</designId>
+</OSDM_Design>

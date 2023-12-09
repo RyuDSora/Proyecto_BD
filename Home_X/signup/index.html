@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/css-style.css">
+    <script src="../js/script.js"></script>
+    <title>registro</title>
+    <script>
+        window.onload = starts;
+        function starts(){
+            select = document.getElementById("anios");
+            for(i = 1970; i <= 2023; i++){
+                option = document.createElement("option");
+                option.value = i;
+                option.text = i;
+                select.appendChild(option);
+            }
+        }
+    </script>
+</head>
+<body >
+    <div class="" style="height: 100%;display: flex;align-items: center; justify-content: center;">
+        <div class="" id="d-1">
+            <div class="" style="width: 50%; height: 60%; border: solid; border-color: black;    border-radius: 25px;">
+                <div style="padding-left: 10px; padding-top: 10px;">
+                    <nav class=d-flex>
+                        <div class="">
+                            <input type="button" value=" " id="cerrar" class="btn">
+                        </div>
+                        <div class="divi2"><span class="">Paso 1 de 5 </span></div>
+                    </nav>
+                </div>
+                <div class="m-4 p-2" style="padding-top: 0px !important;">
+                    <div class="p-2 m-4">
+                        <div style="margin-bottom: 20px;"><h5>Crea tu Cuenta</h5></div>
+                        <div style="margin-bottom: 20px;">
+                            <form action="">
+                                <div class="form-floating  mb-3">
+                                    <input type="text" class="form-control" id="uname" placeholder="Enter Nombre" name="uname">
+                                    <label for="uname">Nombre</label>
+                                </div>
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    <label for="email">Correo Electrónico</label>
+                                  </div>
+                            </form>
+                            <div>
+                                <div><span><h6>Fecha de nacimiento</h6></span></div>
+                                <p><span class="spam">Esta información no será pública. Confirma tu propia edad, incluso si esta cuenta es para una empresa, una mascota u otra cosa.</span></p>
+                            </div>
+                            <form action="" class="d-flex justify-content-around" style="width: auto;">
+                                <div class="form-floating" style="width: 45%;">
+                                    <select class="form-select" name="meses" id="meses" onchange="actualizardia()" >
+                                        <option value="" id="m-nulo"></option>
+                                        <option value="Enero">Enero</option>
+                                        <option value="Febrero">Febrero</option>
+                                        <option value="Marzo">Marzo</option>
+                                        <option value="Abril">Abril</option>
+                                        <option value="Mayo">Mayo</option>
+                                        <Option value="Junio">Junio</Option>
+                                        <option value="Julio">Julio</option>
+                                        <option value="Agosto">Agosto</option>
+                                        <option value="Septiembre">Septiembre</option>
+                                        <option value="Octubre">Octubre</option>
+                                        <option value="Noviembre">Noviembre</option>
+                                        <Option value="Diciembre">Diciembre</Option>
+                                    </select>
+                                    <label for="meses">Mes</label>
+                                </div>
+                                <div class="form-floating" style="width: 20%;">
+                                    <select class="form-select" name="dias" id="dias">
+                                        <option id="d-nulo"></option>
+                                    </select>
+                                    <label for="dias">Dia</label>
+                                </div>
+                                <div class="form-floating" style="width: 25%;">
+                                    <select class="form-select" name="anios" id="anios"><option value="" id="a-nulo"></option></select>
+                                    <label for="anios">Año</label>
+                                </div>
+                                <script>
+                                    
+                                </script>
+                            </form>
+                        </div>
+                        <div class="divi2" style="width: 100%; padding-left: 0px;padding-right: 0px; justify-content: center;">
+                            <div class="divi1" style="width: 100%;margin: 0px; justify-content: center">
+                                <div id="btn-siguiente1" role="button" class="divi2"  onclick="mostrar2()" >
+                                    <button dir="ltr" class="divi1" style="width: 100%; text-align: center;color: #ffffff; background-color: transparent;" >
+                                        <span class="spam">
+                                            <span class="spam">Siguiente</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="d-2">
+            <div class="" style="width: 50%; height: -webkit-fill-available; border: solid; border-color: black;    border-radius: 25px;">
+                <div style="padding-left: 10px; padding-top: 10px;">
+                    <nav class=d-flex>
+                        <div class="">
+                            <input type="button" value="<-" id="cerrar" class="btn" onclick="regresar1()">
+                        </div>
+                        <div class="divi2"><span class="">Paso 2 de 5 </span></div>
+                    </nav>
+                </div>
+                <div class="m-4 p-2" style="padding-top: 0px !important;">
+                    <div class="p-2 m-4">
+                        <div style="margin-bottom: 20px;"><h4>Personaliza tu experiencia</h4></div>
+                        <div style="margin-bottom: 20px;">
+                            <div>
+                                <div><span><h5>Mantén un registro de dónde ves contenido de X en la web</h5></span></div>
+                                <div class="d-flex">
+                                    <div class="flex-fill">
+                                        <p >
+                                            <span class="spam">
+                                                X usa estos datos para personalizar tu experiencia. Este historial de navegación web nunca se almacenará con tu nombre, correo electrónico ni número de teléfono. 
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div  class="flex-fill">
+                                        <input type="checkbox" name="check-1" id="check-1" class="form-check-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p>
+                                        Al registrarte, aceptas nuestros 
+                                        <a href="">Términos</a>, nuestra 
+                                        <a href="">Política de privacidad</a> y el 
+                                        <a href="">Uso de cookies</a>. X podrá usar tu información de contacto, como tu dirección de correo electrónico y número de teléfono, con los fines descritos en nuestra Política de privacidad. 
+                                        <a href="">Más información</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divi2" style="width: 100%; padding-left: 0px;padding-right: 0px; justify-content: center;">
+                            <div class="divi1" style="width: 100%;margin: 0px; justify-content: center">
+                                <div id="btn-siguiente2" role="button" class="divi2"  onclick="mostrar3()" >
+                                    <button dir="ltr" class="divi1" style="width: 100%; text-align: center;color: #ffffff; background-color: transparent;" >
+                                        <span class="spam">
+                                            <span class="spam">Siguiente</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="d-3">
+            <div class="" style="width: 50%; height: 60%; border: solid; border-color: black;    border-radius: 25px;">
+                <div style="padding-left: 10px; padding-top: 10px;">
+                    <nav class=d-flex>
+                        <div class="">
+                            <input type="button" value="<-" id="cerrar" class="btn" onclick="regresar2()">
+                        </div>
+                        <div class="divi2"><span class="">Paso 3 de 5 </span></div>
+                    </nav>
+                </div>
+                <div class="m-4 p-2" style="padding-top: 0px !important;">
+                    <div class="p-2 m-4">
+                        <div style="margin-bottom: 20px;"><h5>Crea tu Cuenta</h5></div>
+                        <div style="margin-bottom: 20px;">
+                            <form action="" class="was-validated">
+                                <div class="form-floating  mb-3">
+                                    <input type="text" class="form-control" id="uname2" placeholder="Enter Nombre" name="uname">
+                                    <label for="uname">Nombre</label>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">error</div>
+                                </div>
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="email" class="form-control" id="email2" placeholder="Enter email" name="email">
+                                    <label for="email">Correo Electrónico</label>
+                                </div>
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="text" name="bday" id="bday" placeholder="Cumpleaños" class="form-control">
+                                    <label for="bday">Fecha de Nacimiento</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div style="font-size: x-small;">
+                            <p>
+                                Al registrarte, aceptas los 
+                                <a href="">Términos de servicio</a> y la 
+                                <a href="">Política de privacidad</a>, incluida la 
+                                <a href="">Política de uso de cookies</a>. Twitter puede usar tu información de contacto, como tu dirección de correo electrónico y 
+                                tu número de teléfono, con los fines descritos en nuestra Política de privacidad, por ejemplo, mantener tu cuenta segura y personalizar 
+                                nuestros servicios, incluidos los anuncios. 
+                                <a href="">Más información</a>. Otras personas podrán encontrarte por tu correo electrónico o número de teléfono, 
+                                si los proporcionaste, a menos que elijas otra opción 
+                                <a href="">aquí</a>.
+                            </p>
+                        </div>
+                        <div class="divi2" style="width: 100%; padding-left: 0px;padding-right: 0px; justify-content: center;">
+                            <div class="divi1" style="width: 100%;margin: 0px; justify-content: center">
+                                <div id="btn-siguiente3" role="button" class="divi2"  onclick="mostrar4()" >
+                                    <button dir="ltr" class="divi1" style="width: 100%; text-align: center;color: #ffffff; background-color: transparent;" >
+                                        <span class="spam">
+                                            <span class="spam">Siguiente</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="d-4">
+            <div class="" style="width: 50%; height: 60%; border: solid; border-color: black;    border-radius: 25px;">
+                <div style="padding-left: 10px; padding-top: 10px;">
+                    <nav class=d-flex>
+                        <div class="">
+                            <input type="button" value="<-" id="cerrar" class="btn" onclick="regresar3()">
+                        </div>
+                        <div class="divi2"><span class="">Paso 4 de 5 </span></div>
+                    </nav>
+                </div>
+                <div class="m-4 p-2" style="padding-top: 0px !important;">
+                    <div class="p-2 m-4">
+                        <div style="margin-bottom: 20px;"><h5>Crea tu Cuenta</h5></div>
+                        <div style="margin-bottom: 20px;">
+                            <form action="" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                    <label for="verify" class="form-label">Código de Verificación</label>
+                                    <input type="text" class="form-control" id="verify" placeholder="Código de Verificación" name="verify" required>
+                                </div>
+                            </form>
+                            <div>
+                                <a href=""><span><h6>¿No recibiste el correo electrónico?</h6></span></a>
+                            </div>
+                        </div>
+                        <div class="divi2" style="width: 100%; padding-left: 0px;padding-right: 0px; justify-content: center;">
+                            <div class="divi1" style="width: 100%;margin: 0px; justify-content: center">
+                                <div id="btn-siguiente3" role="button" class="divi2"  onclick="mostrar5()" >
+                                    <button dir="ltr" class="divi1" style="width: 100%; text-align: center;color: #ffffff; background-color: transparent;" >
+                                        <span class="spam">
+                                            <span class="spam">Siguiente</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="d-5">
+            <div class="" style="width: 50%; height: 60%; border: solid; border-color: black;    border-radius: 25px;">
+                <div style="padding-left: 10px; padding-top: 10px;">
+                    <nav class=d-flex>
+                        <div class="">
+                            <input type="button" value="<-" id="cerrar" class="btn" onclick="regresar4()">
+                        </div>
+                        <div class="divi2"><span class="">Paso 5 de 5 </span></div>
+                    </nav>
+                </div>
+                <div class="m-4 p-2" style="padding-top: 0px !important;">
+                    <div class="p-2 m-4">
+                        <div style="margin-bottom: 20px;"><h5>Necesitas una Contraseña</h5></div>
+                        <div><span>Asegúrate de que tenga 8 caracteres o más.</span></div>
+                        <div style="margin-bottom: 20px;">
+                            <form action="" class="was-validated">
+                                <div class="mb-3 mt-3">
+                                    <label for="pass" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="pass" placeholder="Contraseña" name="Contraseña" required>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="divi2" style="width: 100%; padding-left: 0px;padding-right: 0px; justify-content: center;">
+                            <div class="divi1" style="width: 100%;margin: 0px; justify-content: center">
+                                <div id="btn-siguiente3" role="button" class="divi2"  onclick="registrar()" >
+                                    <button dir="ltr" class="divi1" style="width: 100%; text-align: center;color: #ffffff; background-color: transparent;" >
+                                        <span class="spam">
+                                            <span class="spam">Registrar</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

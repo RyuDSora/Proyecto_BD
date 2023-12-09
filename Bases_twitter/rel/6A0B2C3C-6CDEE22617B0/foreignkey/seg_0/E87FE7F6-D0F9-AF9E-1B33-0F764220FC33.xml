@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E87FE7F6-D0F9-AF9E-1B33-0F764220FC33" containerWithKeyObject="9B20FB28-2FFA-77D8-7C0F-DC85DF2F0036" localFKIndex="4DB0DA40-A134-5794-1E0F-BCB157D87664" name="TBL_NOT_TBL_T_NOT_FK">
+<createdBy>bessy</createdBy>
+<createdTime>2023-10-23 00:09:46 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<referredTableLongName>TBL_TIPO_NOTIFICACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>22C71B97-C92F-B4B0-A2D0-67B130A44DA0</referredTableID>
+<keyObject>9D2D79ED-EDE1-7081-AC52-DDE2046DC0F2</keyObject>
+<referredKeyID>9D2D79ED-EDE1-7081-AC52-DDE2046DC0F2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_notificacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B435287-E044-F167-718F-C89E241EFBBD" name="TBL_LIKES">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:33:52 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<ordsAlias>table_35</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="like_id" id="81C5678C-D8BC-EFB0-EB11-AD41D658C0EC">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:34:43 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="87585E95-5240-4ED0-2699-CBE54333AECB">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:35:08 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1118FED6-3C64-904D-A87A-973BE91023E0" referredColumn="1D821847-4A67-7EAD-B84A-C4A359108A1F"/>
+</associations>
+</Column>
+<Column name="id_publicacion" id="B41B0877-4A85-A075-5282-AA441732BFDF">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:36:10 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFCFF312-D8C9-AC0B-12C5-51A57E1B9F7B" referredColumn="83600E1A-6341-8760-73AC-20F962DB3D65"/>
+</associations>
+</Column>
+<Column name="id_repost" id="9AB8AAC4-E035-0993-22CA-2A4FA3469376">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:36:14 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42AC9191-3AFD-494E-51FA-8F59C816B6DE" referredColumn="B5D88ADA-6ADD-F05C-4935-76362D8EE41F"/>
+</associations>
+</Column>
+<Column name="id_comentarios" id="2F090C2F-654D-D1C8-F469-8E4B55265159">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:36:28 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23D9C98F-C54E-4395-DBE0-711F42452904" referredColumn="55FDDC11-02F5-E0CF-4A1E-682496F93CC0"/>
+</associations>
+</Column>
+<Column name="fecha_like" id="81912200-91B0-C3B4-2693-A6253683E8D9">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:34:43 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F517D21-CCEC-C5D7-388F-143BBA4F7D01" name="TBL_LIKES_PK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:34:43 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81C5678C-D8BC-EFB0-EB11-AD41D658C0EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D078D643-FD4C-18F9-D4AB-192576007291" name="TBL_LIKES_TBL_USUARIOS_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:35:08 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87585E95-5240-4ED0-2699-CBE54333AECB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A822EC89-01A2-F8C9-D515-2C1C3BC6695B" name="TBL_LIKES_TBL_PUBS_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:36:10 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B41B0877-4A85-A075-5282-AA441732BFDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71035B96-12B4-475D-1B18-A82113B07624" name="TBL_LIKES_TBL_RE-POSTS_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:36:14 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB8AAC4-E035-0993-22CA-2A4FA3469376"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5D6D604-740D-B137-D449-0A127506FBDB" name="TBL_LIKES_TBL_COM_FK">
+<createdBy>luis_</createdBy>
+<createdTime>2023-11-30 20:36:28 UTC</createdTime>
+<ownerDesignName>Bases_twitter</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F090C2F-654D-D1C8-F469-8E4B55265159"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
